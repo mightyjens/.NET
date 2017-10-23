@@ -7,7 +7,7 @@
     <ProjectGuid>{E1455F23-93BD-4248-B659-F4D059674836}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Comsol.ContractManager.CrossCutting.Logging</RootNamespace>
+    <RootNamespace>Codenut.ContractManager.CrossCutting.Logging</RootNamespace>
     <AssemblyName>Logging</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

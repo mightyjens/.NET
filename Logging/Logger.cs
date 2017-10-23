@@ -1,4 +1,4 @@
-﻿namespace Comsol.ContractManager.CrossCutting.Logging
+﻿namespace Codenut.ContractManager.CrossCutting.Logging
 {
     public class Logger
     {

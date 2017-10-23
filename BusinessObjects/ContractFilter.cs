@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Codenut.ContractManager.CrossCutting.BusinessObjects
 {
-    public class Contract
+    public class ContractFilter
     {
+        public int ContractId { get; set; }
+        public string ContractDescription { get; set; }
 
-        public int Id { get; set; }
+        public void SetContractFilter()
+        {
 
+        }
     }
 }

@@ -7,7 +7,7 @@
     <ProjectGuid>{A57B42DB-C0ED-4A66-A9DA-9D6851593958}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Comsol.ContractManager.CrossCutting.BusinessObjects</RootNamespace>
+    <RootNamespace>Codenut.ContractManager.CrossCutting.BusinessObjects</RootNamespace>
     <AssemblyName>BusinessObjects</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contract.cs" />
+    <Compile Include="ContractFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,4 @@
-﻿namespace Comsol.ContractManager.CrossCutting.Security
+﻿namespace Codenut.ContractManager.CrossCutting.Security
 {
     public class Security
     {
