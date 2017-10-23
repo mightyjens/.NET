@@ -2,5 +2,9 @@
 {
     public class Logger
     {
+        public void LogMessage()
+        {
+
+        }
     }
 }
