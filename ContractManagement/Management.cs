@@ -1,11 +1,13 @@
-﻿using Codenut.ContractManager.CrossCutting.BusinessObjects;
+﻿
 using System.Collections.Generic;
+using Codenut.ContractManager.Data.Handling;
+using DataClasses;
 
 namespace Codenut.ContractManager.Logic.ContractManagement
 {
     public class Management
     {
-        Data.Handling.Repository _contractRepository;
+        Repository _contractRepository;
 
         public Contract QueryContract()
         {

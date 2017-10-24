@@ -20,7 +20,7 @@ namespace Codenut.ContractManager.UI.ContractManagerApp
         private void getContract_Click(object sender, EventArgs e)
         {
             var _contractManager = new Codenut.ContractManager.Logic.ContractManagement.Management();
-            var _contractResult = _contractManager.QueryContracts(new CrossCutting.BusinessObjects.ContractFilter
+            var _contractResult = _contractManager.QueryContracts(new DataClasses.ContractFilter
             {
                 ContractId = 15
             });

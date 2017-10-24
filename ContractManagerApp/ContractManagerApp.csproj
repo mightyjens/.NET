@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj">
+    <ProjectReference Include="..\BusinessObjects\DataClasses.csproj">
       <Project>{a57b42db-c0ed-4a66-a9da-9d6851593958}</Project>
-      <Name>BusinessObjects</Name>
+      <Name>DataClasses</Name>
     </ProjectReference>
     <ProjectReference Include="..\ContractManagement\ContractManagement.csproj">
       <Project>{72acab05-11dc-4ecf-b30c-81673a5570b2}</Project>
@@ -92,9 +92,9 @@
       <Project>{e1455f23-93bd-4248-b659-f4d059674836}</Project>
       <Name>Logging</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Security\Security.csproj">
+    <ProjectReference Include="..\Security\SecurityManagement.csproj">
       <Project>{0c36d234-43ad-4700-b491-e01671ab6cbd}</Project>
-      <Name>Security</Name>
+      <Name>SecurityManagement</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,4 @@
-﻿namespace Codenut.ContractManager.CrossCutting.Security
+﻿namespace Codenut.ContractManager.CrossCutting.SecurityManagement
 {
     public class Security
     {

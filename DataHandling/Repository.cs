@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using Codenut.ContractManager.CrossCutting.BusinessObjects;
+using DataClasses;
 using Codenut.ContractManager.Data.Handling;
 
 namespace Codenut.ContractManager.Data.Handling
 {
-    public class Repository 
+    public class Repository
     {
-        Handling.IContractRepository _contractRepository;
+        IRepository _repository;
+
+        public string RepositoryType { get; set; }
 
         public Contract GetContract()
         {
@@ -19,9 +21,9 @@ namespace Codenut.ContractManager.Data.Handling
 
             //If Debug then
             var dataFactory = new RepositoryFactory();
-            _contractRepository = dataFactory.CreateDataRepositoryFactory(RepositoryTypes.RepositoryType.Debug);
+            _repository = dataFactory.CreateDataRepository("Dummy");
 
-            return _contractRepository.GetContracts(pContractFilter);
+            return _repository.GetContracts(pContractFilter);
         }
     }
 }

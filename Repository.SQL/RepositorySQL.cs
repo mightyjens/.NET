@@ -1,10 +1,17 @@
-﻿using Codenut.ContractManager.CrossCutting.BusinessObjects;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.Composition;
+using DataClasses;
 
 namespace Codenut.ContractManager.Data.Handling
 {
-    class RepositoryDummy : Data.Handling.IContractRepository
+    class RepositorySql : IRepository
     {
+        public string RepositoryType { get; set; }
+
+        public RepositorySql(IRepository repository)
+        {
+            RepositoryType = "SQL";
+        }
 
         public Contract GetContract()
         {

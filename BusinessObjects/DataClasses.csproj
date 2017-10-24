@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72ACAB05-11DC-4ECF-B30C-81673A5570B2}</ProjectGuid>
+    <ProjectGuid>{A57B42DB-C0ED-4A66-A9DA-9D6851593958}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Codenut.ContractManager.Logic.ContractManagement</RootNamespace>
-    <AssemblyName>ContractManagement</AssemblyName>
+    <RootNamespace>Codenut.ContractManager.CrossCutting.BusinessObjects</RootNamespace>
+    <AssemblyName>BusinessObjects</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,21 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Management.cs" />
+    <Compile Include="Contract.cs" />
+    <Compile Include="ContractFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="_Overview.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BusinessObjects\DataClasses.csproj">
-      <Project>{A57B42DB-C0ED-4A66-A9DA-9D6851593958}</Project>
-      <Name>DataClasses</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataHandling\Handling.csproj">
-      <Project>{9970C159-0C74-418A-80C6-9C47F692AABC}</Project>
-      <Name>Handling</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

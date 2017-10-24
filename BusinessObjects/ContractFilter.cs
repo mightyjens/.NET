@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codenut.ContractManager.CrossCutting.BusinessObjects
+namespace DataClasses
 {
     public class ContractFilter
     {
