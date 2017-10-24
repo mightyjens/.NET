@@ -19,8 +19,8 @@ namespace Codenut.ContractManager.UI.ContractManagerApp
 
         private void getContract_Click(object sender, EventArgs e)
         {
-            var _contractManager = new Codenut.ContractManager.Logic.ContractManagement.Class1();
-            var _contractResult = _contractManager.GetContracts(new CrossCutting.BusinessObjects.ContractFilter
+            var _contractManager = new Codenut.ContractManager.Logic.ContractManagement.Management();
+            var _contractResult = _contractManager.QueryContracts(new CrossCutting.BusinessObjects.ContractFilter
             {
                 ContractId = 15
             });

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using Codenut.ContractManager.CrossCutting.BusinessObjects;
+using Codenut.ContractManager.Data.Handling;
 
-namespace Codenut.ContractManager.Data.DataHandling
+namespace Codenut.ContractManager.Data.Handling
 {
-    public class ContractRepository 
+    public class Repository 
     {
-        Interfaces.IContractRepository _contractRepository;
+        Handling.IContractRepository _contractRepository;
 
         public Contract GetContract()
         {
@@ -17,8 +18,8 @@ namespace Codenut.ContractManager.Data.DataHandling
         {
 
             //If Debug then
-            var _dataFactory = new ContractRepositoryFactory();
-            _contractRepository = _dataFactory.CreateDataRepositoryFactory(RepositoryTypes.RepositoryType.Debug);
+            var dataFactory = new RepositoryFactory();
+            _contractRepository = dataFactory.CreateDataRepositoryFactory(RepositoryTypes.RepositoryType.Debug);
 
             return _contractRepository.GetContracts(pContractFilter);
         }

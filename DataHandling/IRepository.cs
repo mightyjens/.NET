@@ -1,7 +1,7 @@
 ﻿using Codenut.ContractManager.CrossCutting.BusinessObjects;
 using System.Collections.Generic;
 
-namespace Codenut.ContractManager.Data.Interfaces
+namespace Codenut.ContractManager.Data.Handling
 {
     public interface IContractRepository
     {

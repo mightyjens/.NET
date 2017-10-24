@@ -1,9 +1,9 @@
 ﻿using Codenut.ContractManager.CrossCutting.BusinessObjects;
 using System.Collections.Generic;
 
-namespace Codenut.ContractManager.Data.DataHandling
+namespace Codenut.ContractManager.Data.Handling
 {
-    class ContractRepositorySQL : Data.Interfaces.IContractRepository
+    class RepositoryMySQL : Data.Handling.IContractRepository
     {
 
         public Contract GetContract()

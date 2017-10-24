@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContractRepository.cs" />
-    <Compile Include="ContractRepositoryDummy.cs" />
-    <Compile Include="ContractRepositorySQL.cs" />
-    <Compile Include="ContractRepositoryFactory.cs" />
+    <Compile Include="Repositories\RepositorySQL.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="Repositories\RepositoryDummy.cs" />
+    <Compile Include="Repositories\RepositoryMySQL.cs" />
+    <Compile Include="RepositoryFactory.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryTypes.cs" />
   </ItemGroup>
@@ -51,10 +53,6 @@
     <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj">
       <Project>{a57b42db-c0ed-4a66-a9da-9d6851593958}</Project>
       <Name>BusinessObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataInterfaces\DataInterfaces.csproj">
-      <Project>{d894d5a1-b54d-4654-bff5-722e24a81306}</Project>
-      <Name>DataInterfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\Logging\Logging.csproj">
       <Project>{e1455f23-93bd-4248-b659-f4d059674836}</Project>
